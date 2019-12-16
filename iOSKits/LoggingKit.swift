@@ -8,26 +8,27 @@
 
 import Foundation
 
-class LoggingKit {
-    static var log: LoggingKit = LoggingKit()
+public final class LoggingKit {
+    public static var shared: LoggingKit = LoggingKit()
     
     private let defaultFilename = "LoggingKit-output.txt"
     private init() {}
     
-    func printConsole(_ value: Any) {
+    public func printConsole(_ value: Any) {
         print(value)
     }
     
-    func writeToFile(filename: String?, content: String) {
+    public func writeToFile(filename: String?, content: String) {
+        let contentToWrite = content + "\n"
         let destinationFilename = filename == nil ? defaultFilename : filename!
         let fm = FileManager.default
         let log = fm.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(destinationFilename)
         if let handle = try? FileHandle(forWritingTo: log) {
             handle.seekToEndOfFile()
-            handle.write(content.data(using: .utf8)!)
+            handle.write(contentToWrite.data(using: .utf8)!)
             handle.closeFile()
         } else {
-            try? content.data(using: .utf8)?.write(to: log)
+            try? contentToWrite.data(using: .utf8)?.write(to: log)
         }
     }
 }
