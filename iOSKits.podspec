@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  This CocoaPods library helps you develop iOS app more quickly.
+  iOSKits helps you to develop iOS Application more quickly.
                    DESC
 
   spec.homepage     = "https://github.com/nghiadev95/iOSKits"
@@ -40,7 +40,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +55,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Nghia Nguyen" => "quangnghiadev@gmail.com" }
   # Or just: spec.author    = "Nghia Nguyen"
   # spec.authors            = { "Nghia Nguyen" => "quangnghiadev@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/Nghia Nguyen"
+  spec.social_media_url   = "https://twitter.com/quangnghiadev"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,15 +63,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
   spec.ios.deployment_target = "11.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "11.0"
   spec.swift_version = "4.2"
-  # spec.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
