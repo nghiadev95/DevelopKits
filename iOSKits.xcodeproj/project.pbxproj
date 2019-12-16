@@ -17,6 +17,7 @@
 		3BE0FCD523A77AFA00C4FDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE0FCD423A77AFA00C4FDCA /* Assets.xcassets */; };
 		3BE0FCD823A77AFA00C4FDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE0FCD623A77AFA00C4FDCA /* LaunchScreen.storyboard */; };
 		3BE0FCE323A77AFA00C4FDCA /* iOSKitsDemosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0FCE223A77AFA00C4FDCA /* iOSKitsDemosTests.swift */; };
+		3BE0FCEC23A77D7600C4FDCA /* LoggingKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0FCEB23A77D7600C4FDCA /* LoggingKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		3BE0FCDE23A77AFA00C4FDCA /* iOSKitsDemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSKitsDemosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE0FCE223A77AFA00C4FDCA /* iOSKitsDemosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSKitsDemosTests.swift; sourceTree = "<group>"; };
 		3BE0FCE423A77AFA00C4FDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BE0FCEB23A77D7600C4FDCA /* LoggingKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				3BE0FCAE23A77A7100C4FDCA /* iOSKits.h */,
 				3BE0FCAF23A77A7100C4FDCA /* Info.plist */,
+				3BE0FCEB23A77D7600C4FDCA /* LoggingKit.swift */,
 			);
 			path = iOSKits;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					3BE0FCAA23A77A7100C4FDCA = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					3BE0FCB323A77A7100C4FDCA = {
 						CreatedOnToolsVersion = 11.3;
@@ -322,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE0FCEC23A77D7600C4FDCA /* LoggingKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 		3BE0FCC023A77A7100C4FDCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -516,6 +522,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOSKits/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.iOSKits;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +540,7 @@
 		3BE0FCC123A77A7100C4FDCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -539,6 +548,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iOSKits/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +565,7 @@
 		3BE0FCC323A77A7100C4FDCA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSKitsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +583,7 @@
 		3BE0FCC423A77A7100C4FDCA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSKitsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
