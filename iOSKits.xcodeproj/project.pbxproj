@@ -16,7 +16,6 @@
 		3BE0FCD323A77AF800C4FDCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE0FCD123A77AF800C4FDCA /* Main.storyboard */; };
 		3BE0FCD523A77AFA00C4FDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE0FCD423A77AFA00C4FDCA /* Assets.xcassets */; };
 		3BE0FCD823A77AFA00C4FDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BE0FCD623A77AFA00C4FDCA /* LaunchScreen.storyboard */; };
-		3BE0FCE323A77AFA00C4FDCA /* iOSKitsDemosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0FCE223A77AFA00C4FDCA /* iOSKitsDemosTests.swift */; };
 		3BE0FCEC23A77D7600C4FDCA /* LoggingKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0FCEB23A77D7600C4FDCA /* LoggingKit.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +26,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3BE0FCAA23A77A7100C4FDCA;
 			remoteInfo = iOSKits;
-		};
-		3BE0FCDF23A77AFA00C4FDCA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BE0FCA223A77A7000C4FDCA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BE0FCC823A77AF800C4FDCA;
-			remoteInfo = iOSKitsDemos;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,9 +44,6 @@
 		3BE0FCD423A77AFA00C4FDCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE0FCD723A77AFA00C4FDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BE0FCD923A77AFA00C4FDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BE0FCDE23A77AFA00C4FDCA /* iOSKitsDemosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSKitsDemosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BE0FCE223A77AFA00C4FDCA /* iOSKitsDemosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSKitsDemosTests.swift; sourceTree = "<group>"; };
-		3BE0FCE423A77AFA00C4FDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BE0FCEB23A77D7600C4FDCA /* LoggingKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BE0FCDB23A77AFA00C4FDCA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,7 +79,6 @@
 				3BE0FCAD23A77A7100C4FDCA /* iOSKits */,
 				3BE0FCB823A77A7100C4FDCA /* iOSKitsTests */,
 				3BE0FCCA23A77AF800C4FDCA /* iOSKitsDemos */,
-				3BE0FCE123A77AFA00C4FDCA /* iOSKitsDemosTests */,
 				3BE0FCAC23A77A7100C4FDCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +89,6 @@
 				3BE0FCAB23A77A7100C4FDCA /* iOSKits.framework */,
 				3BE0FCB423A77A7100C4FDCA /* iOSKitsTests.xctest */,
 				3BE0FCC923A77AF800C4FDCA /* iOSKitsDemos.app */,
-				3BE0FCDE23A77AFA00C4FDCA /* iOSKitsDemosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,15 +124,6 @@
 				3BE0FCD923A77AFA00C4FDCA /* Info.plist */,
 			);
 			path = iOSKitsDemos;
-			sourceTree = "<group>";
-		};
-		3BE0FCE123A77AFA00C4FDCA /* iOSKitsDemosTests */ = {
-			isa = PBXGroup;
-			children = (
-				3BE0FCE223A77AFA00C4FDCA /* iOSKitsDemosTests.swift */,
-				3BE0FCE423A77AFA00C4FDCA /* Info.plist */,
-			);
-			path = iOSKitsDemosTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,24 +193,6 @@
 			productReference = 3BE0FCC923A77AF800C4FDCA /* iOSKitsDemos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3BE0FCDD23A77AFA00C4FDCA /* iOSKitsDemosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BE0FCE823A77AFA00C4FDCA /* Build configuration list for PBXNativeTarget "iOSKitsDemosTests" */;
-			buildPhases = (
-				3BE0FCDA23A77AFA00C4FDCA /* Sources */,
-				3BE0FCDB23A77AFA00C4FDCA /* Frameworks */,
-				3BE0FCDC23A77AFA00C4FDCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BE0FCE023A77AFA00C4FDCA /* PBXTargetDependency */,
-			);
-			name = iOSKitsDemosTests;
-			productName = iOSKitsDemosTests;
-			productReference = 3BE0FCDE23A77AFA00C4FDCA /* iOSKitsDemosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,10 +213,6 @@
 					3BE0FCC823A77AF800C4FDCA = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					3BE0FCDD23A77AFA00C4FDCA = {
-						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 3BE0FCC823A77AF800C4FDCA;
-					};
 				};
 			};
 			buildConfigurationList = 3BE0FCA523A77A7000C4FDCA /* Build configuration list for PBXProject "iOSKits" */;
@@ -282,7 +231,6 @@
 				3BE0FCAA23A77A7100C4FDCA /* iOSKits */,
 				3BE0FCB323A77A7100C4FDCA /* iOSKitsTests */,
 				3BE0FCC823A77AF800C4FDCA /* iOSKitsDemos */,
-				3BE0FCDD23A77AFA00C4FDCA /* iOSKitsDemosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,13 +257,6 @@
 				3BE0FCD823A77AFA00C4FDCA /* LaunchScreen.storyboard in Resources */,
 				3BE0FCD523A77AFA00C4FDCA /* Assets.xcassets in Resources */,
 				3BE0FCD323A77AF800C4FDCA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BE0FCDC23A77AFA00C4FDCA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,14 +289,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BE0FCDA23A77AFA00C4FDCA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BE0FCE323A77AFA00C4FDCA /* iOSKitsDemosTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -363,11 +296,6 @@
 			isa = PBXTargetDependency;
 			target = 3BE0FCAA23A77A7100C4FDCA /* iOSKits */;
 			targetProxy = 3BE0FCB623A77A7100C4FDCA /* PBXContainerItemProxy */;
-		};
-		3BE0FCE023A77AFA00C4FDCA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3BE0FCC823A77AF800C4FDCA /* iOSKitsDemos */;
-			targetProxy = 3BE0FCDF23A77AFA00C4FDCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -632,48 +560,6 @@
 			};
 			name = Release;
 		};
-		3BE0FCE923A77AFA00C4FDCA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSKitsDemosTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.iOSKitsDemosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSKitsDemos.app/iOSKitsDemos";
-			};
-			name = Debug;
-		};
-		3BE0FCEA23A77AFA00C4FDCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iOSKitsDemosTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.iOSKitsDemosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSKitsDemos.app/iOSKitsDemos";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,15 +595,6 @@
 			buildConfigurations = (
 				3BE0FCE623A77AFA00C4FDCA /* Debug */,
 				3BE0FCE723A77AFA00C4FDCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BE0FCE823A77AFA00C4FDCA /* Build configuration list for PBXNativeTarget "iOSKitsDemosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BE0FCE923A77AFA00C4FDCA /* Debug */,
-				3BE0FCEA23A77AFA00C4FDCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
