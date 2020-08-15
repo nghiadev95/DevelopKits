@@ -31,7 +31,7 @@ pod 'iDevKits/UserDefault'      //  Integrate User Default only
 ```
 
 ### Swift Package Manager
-You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install iDevKits by adding the proper description to your `Package.swift` 
+You can use The Swift Package Manager to install iDevKits by adding the proper description to your `Package.swift` 
 
 ```swift
 import PackageDescription
