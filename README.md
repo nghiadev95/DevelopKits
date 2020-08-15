@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="https://cdn.rawgit.com/iDevKits/iDevKits/master/Assets/logo.png" title="iDevKits">
+  <img src="https://raw.githubusercontent.com/nghiadev95/iDevKits/master/Assets/logo.png" title="iDevKits">
 </p>
 
 [![Build Status](https://github.com/iDevKits/iDevKits/workflows/iDevKits/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions)
@@ -53,6 +53,8 @@ let package = Package(
     ]
 )
 </code></pre>
+
+</details>
 
 ## List of All Extensions
 
