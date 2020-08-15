@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img src="https://raw.githubusercontent.com/nghiadev95/iDevKits/master/Assets/logo.png" title="iDevKits">
 </p>
 
@@ -10,7 +10,7 @@
 [![Xcode](https://img.shields.io/badge/Xcode-11.6-blue.svg)](https://developer.apple.com/xcode)
 [![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-iDevKits is a collection of useful extension .
+**iDevKits** is a collection of useful extension .
 
 ## Requirements
 
@@ -19,7 +19,7 @@ iDevKits is a collection of useful extension .
 
 ## Installation
 
-<summary>CocoaPods</summary>
+### CocoaPods
 </br>
 <p>To integrate iDevKits into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
 
@@ -35,9 +35,9 @@ iDevKits is a collection of useful extension .
 <h4>- Integrate UserDefault only:</h4>
 <pre><code class="ruby language-ruby">pod 'iDevKits/UserDefault'</code></pre>
 
-<summary>Swift Package Manager</summary>
+### Swift Package Manager
 </br>
-<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install <code>iDevKits</code> by adding the proper description to your <code>Package.swift</code> file:</p>
+<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install iDevKits by adding the proper description to your <code>Package.swift</code> file:</p>
 
 <pre><code class="swift language-swift">import PackageDescription
 
@@ -49,6 +49,11 @@ let package = Package(
     ]
 )
 </code></pre>
+
+
+## Usage
+
+**Under construction**
 
 ## List of All Extensions
 
@@ -66,7 +71,5 @@ Special thanks to:
 
 ## License
 
-<ul>
-<li>iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift/) source code. See [SwiftSwift LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.</li>
-<li>iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.</li>
-</ul>
+- iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift) source code. See [SwiftSwift LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
+- iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.
