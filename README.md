@@ -10,7 +10,7 @@
 [![Xcode](https://img.shields.io/badge/Xcode-11.6-blue.svg)](https://developer.apple.com/xcode)
 [![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-**iDevKits** is a collection of useful extension .
+**iDevKits** is a composited library of useful classes, extensions for helping development more fastly
 
 ## Requirements
 
@@ -28,6 +28,8 @@ pod 'iDevKits'                  //  Integrate all
 // or
 pod 'iDevKits/SafeDictionary'   //  Integrate Safe Dictionary only
 pod 'iDevKits/UserDefault'      //  Integrate User Default only
+pod 'iDevKits/Foundation'       //  Integrate Foundation only
+pod 'iDevKits/UIKit'            //  Integrate UIKit only
 ```
 
 ### Swift Package Manager
@@ -87,6 +89,11 @@ var accessToken: String?
 @UserDefaultObject(key: "user")
 var user: UserProfile?
 ```
+
+### Extension
+
+- [Foundation](https://github.com/nghiadev95/iDevKits/tree/master/Sources/Foundation)
+- [UIKit](https://github.com/nghiadev95/iDevKits/tree/master/Sources/UIKit)
 
 ## License
 

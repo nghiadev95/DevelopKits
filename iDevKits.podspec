@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iDevKits'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'ToolKits for iOS Development'
   s.description      = <<-DESC
 Collection of toolkits  for iOS Development.
@@ -25,11 +25,15 @@ Collection of toolkits  for iOS Development.
     ss.source_files = 'Sources/SafeDictionary/*.swift'
   end
 
-  s.subspec 'SwifterSwift' do |ss|
-    ss.source_files = 'Sources/SwifterSwift/**/*.swift'
-  end
-  
   s.subspec 'UserDefault' do |ss|
     ss.source_files = 'Sources/UserDefault/*.swift'
+  end
+  
+  s.subspec 'Foundation' do |ss|
+    ss.source_files = 'Sources/Foundation/*.swift'
+  end
+
+  s.subspec 'UIKit' do |ss|
+    ss.source_files = 'Sources/UIKit/*.swift'
   end
 end
