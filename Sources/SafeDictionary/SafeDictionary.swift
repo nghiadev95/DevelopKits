@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Using this class for safe access dictionary value when working with multi thread
+
 public final class SafeDictionary<Key: Hashable, Value> {
     var dictionary: [Key: Value] = [:]
     var concurrentQueue: DispatchQueue

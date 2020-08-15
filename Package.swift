@@ -15,10 +15,7 @@ let package = Package(
             targets: ["iDKUserDefault"]),
         .library(
             name: "iDKSafeDictionary",
-            targets: ["iDKSafeDictionary"]),
-        .library(
-            name: "iDKSwifterSwift",
-            targets: ["iDKSwifterSwift"]),
+            targets: ["iDKSafeDictionary"])
     ],
     dependencies: [],
     targets: [
@@ -29,10 +26,6 @@ let package = Package(
         .target(
             name: "iDKSafeDictionary",
             dependencies: [],
-            path: "Sources/SafeDictionary"),
-        .target(
-            name: "iDKSwifterSwift",
-            dependencies: [],
-            path: "Sources/SwifterSwift"),
+            path: "Sources/SafeDictionary")
     ],
     swiftLanguageVersions: [.v5])

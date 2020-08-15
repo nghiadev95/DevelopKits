@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Property Wrapper of User Default for saving custom Codable object
+
 @propertyWrapper
 public struct UserDefaultObject<T: Codable> {
     private let key: String
