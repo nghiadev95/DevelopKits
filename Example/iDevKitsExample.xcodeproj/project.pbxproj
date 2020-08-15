@@ -13,9 +13,9 @@
 		3B7CADF624E7744A00EC3FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CADF524E7744A00EC3FAA /* Assets.xcassets */; };
 		3B7CADF924E7744A00EC3FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CADF724E7744A00EC3FAA /* LaunchScreen.storyboard */; };
 		3B7CAE0124E774E800EC3FAA /* iDevKits in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CAE0024E774E800EC3FAA /* iDevKits */; };
-		3B7CAE0824E78C4300EC3FAA /* iDKSwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7CAE0724E78C4300EC3FAA /* iDKSwifterSwift */; };
 		3B7CAE0A24E7B13000EC3FAA /* iDKSafeDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */; };
 		3B7CAE0C24E7B13000EC3FAA /* iDKUserDefault in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7CAE0B24E7B13000EC3FAA /* iDKUserDefault */; };
+		3B7CAE0E24E7B98D00EC3FAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CAE0D24E7B98D00EC3FAA /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +27,7 @@
 		3B7CADF824E7744A00EC3FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7CADFA24E7744A00EC3FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B7CAE0024E774E800EC3FAA /* iDevKits */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iDevKits; path = ..; sourceTree = "<group>"; };
+		3B7CAE0D24E7B98D00EC3FAA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +36,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7CAE0A24E7B13000EC3FAA /* iDKSafeDictionary in Frameworks */,
-				3B7CAE0824E78C4300EC3FAA /* iDKSwifterSwift in Frameworks */,
 				3B7CAE0C24E7B13000EC3FAA /* iDKUserDefault in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +64,7 @@
 		3B7CADEB24E7744800EC3FAA /* iDevKitsExample */ = {
 			isa = PBXGroup;
 			children = (
+				3B7CAE0F24E7B99300EC3FAA /* Models */,
 				3B7CADEC24E7744800EC3FAA /* AppDelegate.swift */,
 				3B7CADF024E7744800EC3FAA /* ViewController.swift */,
 				3B7CADF224E7744800EC3FAA /* Main.storyboard */,
@@ -79,6 +80,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B7CAE0F24E7B99300EC3FAA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B7CAE0D24E7B98D00EC3FAA /* UserProfile.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +107,6 @@
 			);
 			name = iDevKitsExample;
 			packageProductDependencies = (
-				3B7CAE0724E78C4300EC3FAA /* iDKSwifterSwift */,
 				3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */,
 				3B7CAE0B24E7B13000EC3FAA /* iDKUserDefault */,
 			);
@@ -160,6 +168,7 @@
 			files = (
 				3B7CADF124E7744800EC3FAA /* ViewController.swift in Sources */,
 				3B7CADED24E7744800EC3FAA /* AppDelegate.swift in Sources */,
+				3B7CAE0E24E7B98D00EC3FAA /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +368,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3B7CAE0724E78C4300EC3FAA /* iDKSwifterSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iDKSwifterSwift;
-		};
 		3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iDKSafeDictionary;
