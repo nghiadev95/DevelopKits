@@ -2,8 +2,8 @@
   <img src="https://raw.githubusercontent.com/nghiadev95/iDevKits/master/Assets/logo.png" title="iDevKits">
 </p>
 
-[![Build Status](https://github.com/iDevKits/iDevKits/workflows/iDevKits/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions)
-[![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg)](https://github.com/nghiadev95/iDevKits)
+<!-- [![Build Status](https://github.com/iDevKits/iDevKits/workflows/iDevKits/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions) -->
+[![Cocoapods platforms](https://img.shields.io/cocoapods/p/iDevKits)](https://github.com/nghiadev95/iDevKits)
 [![Cocoapods](https://img.shields.io/cocoapods/v/iDevKits.svg)](https://cocoapods.org/pods/iDevKits)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 [![Swift](https://img.shields.io/badge/Swift-5.3-orange.svg)](https://swift.org)
