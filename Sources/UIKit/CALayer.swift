@@ -8,7 +8,7 @@
 #if canImport(UIKit)
 import UIKit
 
-extension CALayer {
+public extension CALayer {
     func applySketchShadow(color: UIColor = .black, alpha: Float = 0.5, xValue: CGFloat = 0, yValue: CGFloat = 2, blur: CGFloat = 4, spread: CGFloat = 0) {
         shadowColor = color.cgColor
         shadowOpacity = alpha
