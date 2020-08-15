@@ -5,6 +5,7 @@
 //  Created by Tien Nguyen on 5/27/20.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 extension CALayer {
@@ -32,3 +33,4 @@ extension CALayer {
         shadowPath = nil
     }
 }
+#endif
