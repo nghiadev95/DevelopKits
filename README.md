@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/nghiadev95/iDevKits/master/Assets/logo.png" title="iDevKits">
 </p>
 
-<!-- [![Build Status](https://github.com/iDevKits/iDevKits/workflows/iDevKits/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions) -->
+[![Build Status](https://github.com/nghiadev95/iDevKits/workflows/Swift/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions)
 [![Cocoapods platforms](https://img.shields.io/cocoapods/p/iDevKits)](https://github.com/nghiadev95/iDevKits)
 [![Cocoapods](https://img.shields.io/cocoapods/v/iDevKits.svg)](https://cocoapods.org/pods/iDevKits)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
