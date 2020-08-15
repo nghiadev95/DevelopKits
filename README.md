@@ -10,7 +10,7 @@
 [![Xcode](https://img.shields.io/badge/Xcode-11.6-blue.svg)](https://developer.apple.com/xcode)
 [![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-**iDevKits** is a collection of useful extension .
+**iDevKits** is a composited library of useful classes, extensions for helping development more fastly
 
 ## Requirements
 
@@ -20,26 +20,23 @@
 ## Installation
 
 ### CocoaPods
-</br>
-<p>To integrate iDevKits into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
 
-<h4>- Integrate All extensions (recommended):</h4>
-<pre><code class="ruby language-ruby">pod 'iDevKits'</code></pre>
+To integrate iDevKits into your Xcode project using CocoaPods, specify it in your `Podfile`
 
-<h4>- Integrate SafeDictionary only:</h4>
-<pre><code class="ruby language-ruby">pod 'iDevKits/SafeDictionary'</code></pre>
-
-<h4>- Integrate SwifterSwift only:</h4>
-<pre><code class="ruby language-ruby">pod 'iDevKits/SwifterSwift'</code></pre>
-
-<h4>- Integrate UserDefault only:</h4>
-<pre><code class="ruby language-ruby">pod 'iDevKits/UserDefault'</code></pre>
+```ruby
+pod 'iDevKits'                  //  Integrate all
+// or
+pod 'iDevKits/SafeDictionary'   //  Integrate Safe Dictionary only
+pod 'iDevKits/UserDefault'      //  Integrate User Default only
+pod 'iDevKits/Foundation'       //  Integrate Foundation only
+pod 'iDevKits/UIKit'            //  Integrate UIKit only
+```
 
 ### Swift Package Manager
-</br>
-<p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install iDevKits by adding the proper description to your <code>Package.swift</code> file:</p>
+You can use The Swift Package Manager to install iDevKits by adding the proper description to your `Package.swift` 
 
-<pre><code class="swift language-swift">import PackageDescription
+```swift
+import PackageDescription
 
 let package = Package(
     name: "YOUR_PROJECT_NAME",
@@ -48,28 +45,56 @@ let package = Package(
         .package(url: "https://github.com/nghiadev95/iDevKits.git", from: "1.0.0")
     ]
 )
-</code></pre>
+```
 
 
 ## Usage
 
-**Under construction**
+### Safe Dictionary
+Using this class for safe access dictionary value when working with multi thread
 
-## List of All Extensions
+```swift
+let safeDictionary = SafeDictionary<String, Int>(queueLabel: "queue.name")
 
-<ul>
-<li><a href="https://github.com/nghiadev95/iDevKits/tree/master/Sources/UserDefault"><code>Array extensions</code></a></li>
-<li><a href="https://github.com/nghiadev95/iDevKits/tree/master/Sources/SafeDictionary/SafeDictionary.swift"><code>Safe Dictionary</code></a></li>
-<li><a href="https://github.com/nghiadev95/iDevKits/tree/master/Sources/SwifterSwift"><code>SwifterSwift</code></a></li>
-</ul>
+/// Get value from key
+let id = safeDictionary["id"]
+// or
+let id = safeDictionary.getValue(key: "id")
 
-## Thanks
+/// Update value for key
+safeDictionary.updateValue(2, forKey: "id")
+// or
+safeDictionary["id"] = 2
 
-Special thanks to:
+/// Remove value with key
+safeDictionary.removeValue(forKey: "id")
 
-- [SwifterSwift Team](https://github.com/SwifterSwift/SwifterSwift) for their useful open source library ❤️
+/// Get all keys
+let keys = safeDictionary.keys
+
+/// Remove all element with keeping capacity ability
+safeDictionary.removeAll()
+safeDictionary.removeAll(keepingCapacity: true)
+```
+
+### User Default
+Property Wrapper of User Default
+
+```swift
+/// Saving primitive data type
+@UserDefaultVariable(key: "accessToken", defaultValue: nil)
+var accessToken: String?
+
+/// Saving custom Codable object
+@UserDefaultObject(key: "user")
+var user: UserProfile?
+```
+
+### Extension
+
+- [Foundation](https://github.com/nghiadev95/iDevKits/tree/master/Sources/Foundation)
+- [UIKit](https://github.com/nghiadev95/iDevKits/tree/master/Sources/UIKit)
 
 ## License
 
-- iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift) source code. See [SwiftSwift LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
 - iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.

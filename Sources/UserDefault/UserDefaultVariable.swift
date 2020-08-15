@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Property Wrapper of User Default for saving primitive data type
+
 @propertyWrapper
 public struct UserDefaultVariable<T> {
     private let key: String
