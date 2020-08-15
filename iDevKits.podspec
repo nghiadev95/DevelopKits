@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iDevKits'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'ToolKits for iOS Development'
   s.description      = <<-DESC
 Collection of toolkits  for iOS Development.
