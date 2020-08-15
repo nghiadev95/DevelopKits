@@ -19,7 +19,6 @@ iDevKits is a collection of useful extension .
 
 ## Installation
 
-<details>
 <summary>CocoaPods</summary>
 </br>
 <p>To integrate iDevKits into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
@@ -36,9 +35,6 @@ iDevKits is a collection of useful extension .
 <h4>- Integrate UserDefault only:</h4>
 <pre><code class="ruby language-ruby">pod 'iDevKits/UserDefault'</code></pre>
 
-</details>
-
-<details>
 <summary>Swift Package Manager</summary>
 </br>
 <p>You can use <a href="https://swift.org/package-manager">The Swift Package Manager</a> to install <code>iDevKits</code> by adding the proper description to your <code>Package.swift</code> file:</p>
@@ -54,8 +50,6 @@ let package = Package(
 )
 </code></pre>
 
-</details>
-
 ## List of All Extensions
 
 <ul>
@@ -68,8 +62,11 @@ let package = Package(
 
 Special thanks to:
 
-- [SwiftSwift Team](https://github.com/SwifterSwift) for their useful open source library ❤️.
+- [SwifterSwift Team](https://github.com/SwifterSwift/SwifterSwift) for their useful open source library ❤️
 
 ## License
-iDevKits is using [SwiftSwift](https://github.com/SwifterSwift/) source code. See [SwiftSwift LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
-iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.
+
+<ul>
+<li>iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift/) source code. See [SwiftSwift LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.</li>
+<li>iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.</li>
+</ul>
