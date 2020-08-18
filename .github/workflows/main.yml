@@ -23,7 +23,7 @@ jobs:
 
     - name: Build and Test
       run: |
-        set -o pipefail && xcodebuild clean build test \
+        set -o pipefail && xcodebuild clean build \
           -project "$PROJECT" \
           -scheme "$SCHEME" \
           -sdk "$SDK" \
