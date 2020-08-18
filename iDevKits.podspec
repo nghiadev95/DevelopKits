@@ -17,23 +17,9 @@ Collection of toolkits  for iOS Development.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'quangnghiadev' => 'quangnghiadev@gmail.com' }
   s.source           = { :git => 'https://github.com/nghiadev95/iDevKits.git', :tag => s.version.to_s }
-
+  s.platform = :ios
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.1'
-
-  s.subspec 'SafeDictionary' do |ss|
-    ss.source_files = 'Sources/SafeDictionary/*.swift'
-  end
-
-  s.subspec 'UserDefault' do |ss|
-    ss.source_files = 'Sources/UserDefault/*.swift'
-  end
-  
-  s.subspec 'Foundation' do |ss|
-    ss.source_files = 'Sources/Foundation/*.swift'
-  end
-
-  s.subspec 'UIKit' do |ss|
-    ss.source_files = 'Sources/UIKit/*.swift'
-  end
+  s.dependency "Then", ">= 2.7.0"
+  s.dependency "SwifterSwift", ">= 5.2.0"
 end

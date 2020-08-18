@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,35 +11,17 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "iDKUserDefault",
-            targets: ["iDKUserDefault"]),
-        .library(
-            name: "iDKSafeDictionary",
-            targets: ["iDKSafeDictionary"]),
-        .library(
-            name: "iDKFoundation",
-            targets: ["iDKFoundation"]),
-        .library(
-            name: "iDKUIKit",
-            targets: ["iDKUIKit"])
+            name: "iDevKits",
+            targets: ["iDevKits"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/devxoul/Then.git", from: "2.7.0"),
+        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.2.0")
+    ],
     targets: [
         .target(
-            name: "iDKUserDefault",
-            dependencies: [],
-            path: "Sources/UserDefault"),
-        .target(
-            name: "iDKSafeDictionary",
-            dependencies: [],
-            path: "Sources/SafeDictionary"),
-        .target(
-            name: "iDKFoundation",
-            dependencies: [],
-            path: "Sources/Foundation"),
-        .target(
-            name: "iDKUIKit",
-            dependencies: [],
-            path: "Sources/UIKit")
+            name: "iDevKits",
+            dependencies: ["Then", "SwifterSwift"],
+            path: "Sources/iDevKits")
     ],
     swiftLanguageVersions: [.v5])

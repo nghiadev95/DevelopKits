@@ -24,12 +24,7 @@
 To integrate iDevKits into your Xcode project using CocoaPods, specify it in your `Podfile`
 
 ```ruby
-pod 'iDevKits'                  //  Integrate all
-// or
-pod 'iDevKits/SafeDictionary'   //  Integrate Safe Dictionary only
-pod 'iDevKits/UserDefault'      //  Integrate User Default only
-pod 'iDevKits/Foundation'       //  Integrate Foundation only
-pod 'iDevKits/UIKit'            //  Integrate UIKit only
+pod 'iDevKits'
 ```
 
 ### Swift Package Manager
@@ -90,11 +85,23 @@ var accessToken: String?
 var user: UserProfile?
 ```
 
+### Then
+
+- [Then](https://github.com/devxoul/Then)
+
+### SwifterSwift
+
+- [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift)
+
 ### Extension
 
 - [Foundation](https://github.com/nghiadev95/iDevKits/tree/master/Sources/Foundation)
 - [UIKit](https://github.com/nghiadev95/iDevKits/tree/master/Sources/UIKit)
 
+
 ## License
 
+- iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift). See  [LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
+- iDevKits is using [Then](https://github.com/devxoul/Then). See  [LICENSE](https://github.com/devxoul/Then/blob/master/LICENSE) for more information.
 - iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.
+
