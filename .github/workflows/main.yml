@@ -10,8 +10,8 @@ jobs:
   test:
     runs-on: macOS-latest
     env:
-      PROJECT: iDevKits.xcodeproj
-      SCHEME: iDevKits-Package
+      PROJECT: DevelopKits.xcodeproj
+      SCHEME: DevelopKits-Package
     steps:
     - uses: actions/checkout@v1
 
