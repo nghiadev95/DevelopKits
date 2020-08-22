@@ -13,13 +13,12 @@
 		3B7CADF624E7744A00EC3FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CADF524E7744A00EC3FAA /* Assets.xcassets */; };
 		3B7CADF924E7744A00EC3FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CADF724E7744A00EC3FAA /* LaunchScreen.storyboard */; };
 		3B7CAE0124E774E800EC3FAA /* iDevKits in Resources */ = {isa = PBXBuildFile; fileRef = 3B7CAE0024E774E800EC3FAA /* iDevKits */; };
-		3B7CAE0A24E7B13000EC3FAA /* iDKSafeDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */; };
-		3B7CAE0C24E7B13000EC3FAA /* iDKUserDefault in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7CAE0B24E7B13000EC3FAA /* iDKUserDefault */; };
 		3B7CAE0E24E7B98D00EC3FAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CAE0D24E7B98D00EC3FAA /* UserProfile.swift */; };
+		3BFB967424F116310095F44F /* DevelopKits in Frameworks */ = {isa = PBXBuildFile; productRef = 3BFB967324F116310095F44F /* DevelopKits */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B7CADE924E7744800EC3FAA /* iDevKitsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDevKitsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7CADE924E7744800EC3FAA /* DevelopKitsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopKitsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7CADEC24E7744800EC3FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7CADF024E7744800EC3FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B7CADF324E7744800EC3FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,8 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B7CAE0A24E7B13000EC3FAA /* iDKSafeDictionary in Frameworks */,
-				3B7CAE0C24E7B13000EC3FAA /* iDKUserDefault in Frameworks */,
+				3BFB967424F116310095F44F /* DevelopKits in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7CAE0024E774E800EC3FAA /* iDevKits */,
-				3B7CADEB24E7744800EC3FAA /* iDevKitsExample */,
+				3B7CADEB24E7744800EC3FAA /* DevelopKitsExample */,
 				3B7CADEA24E7744800EC3FAA /* Products */,
 				3B7CAE0224E78B4000EC3FAA /* Frameworks */,
 			);
@@ -56,12 +54,12 @@
 		3B7CADEA24E7744800EC3FAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B7CADE924E7744800EC3FAA /* iDevKitsExample.app */,
+				3B7CADE924E7744800EC3FAA /* DevelopKitsExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B7CADEB24E7744800EC3FAA /* iDevKitsExample */ = {
+		3B7CADEB24E7744800EC3FAA /* DevelopKitsExample */ = {
 			isa = PBXGroup;
 			children = (
 				3B7CAE0F24E7B99300EC3FAA /* Models */,
@@ -72,7 +70,7 @@
 				3B7CADF724E7744A00EC3FAA /* LaunchScreen.storyboard */,
 				3B7CADFA24E7744A00EC3FAA /* Info.plist */,
 			);
-			path = iDevKitsExample;
+			path = DevelopKitsExample;
 			sourceTree = "<group>";
 		};
 		3B7CAE0224E78B4000EC3FAA /* Frameworks */ = {
@@ -93,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B7CADE824E7744800EC3FAA /* iDevKitsExample */ = {
+		3B7CADE824E7744800EC3FAA /* DevelopKitsExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B7CADFD24E7744A00EC3FAA /* Build configuration list for PBXNativeTarget "iDevKitsExample" */;
+			buildConfigurationList = 3B7CADFD24E7744A00EC3FAA /* Build configuration list for PBXNativeTarget "DevelopKitsExample" */;
 			buildPhases = (
 				3B7CADE524E7744800EC3FAA /* Sources */,
 				3B7CADE624E7744800EC3FAA /* Frameworks */,
@@ -105,13 +103,12 @@
 			);
 			dependencies = (
 			);
-			name = iDevKitsExample;
+			name = DevelopKitsExample;
 			packageProductDependencies = (
-				3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */,
-				3B7CAE0B24E7B13000EC3FAA /* iDKUserDefault */,
+				3BFB967324F116310095F44F /* DevelopKits */,
 			);
 			productName = iDevKitsExample;
-			productReference = 3B7CADE924E7744800EC3FAA /* iDevKitsExample.app */;
+			productReference = 3B7CADE924E7744800EC3FAA /* DevelopKitsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3B7CADE424E7744800EC3FAA /* Build configuration list for PBXProject "iDevKitsExample" */;
+			buildConfigurationList = 3B7CADE424E7744800EC3FAA /* Build configuration list for PBXProject "DevelopKitsExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B7CADE824E7744800EC3FAA /* iDevKitsExample */,
+				3B7CADE824E7744800EC3FAA /* DevelopKitsExample */,
 			);
 		};
 /* End PBXProject section */
@@ -313,13 +310,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iDevKitsExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DevelopKitsExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.iDevKitsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.DevelopKitsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,13 +328,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iDevKitsExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DevelopKitsExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.iDevKitsExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangnghiadev.DevelopKitsExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B7CADE424E7744800EC3FAA /* Build configuration list for PBXProject "iDevKitsExample" */ = {
+		3B7CADE424E7744800EC3FAA /* Build configuration list for PBXProject "DevelopKitsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B7CADFB24E7744A00EC3FAA /* Debug */,
@@ -356,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B7CADFD24E7744A00EC3FAA /* Build configuration list for PBXNativeTarget "iDevKitsExample" */ = {
+		3B7CADFD24E7744A00EC3FAA /* Build configuration list for PBXNativeTarget "DevelopKitsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B7CADFE24E7744A00EC3FAA /* Debug */,
@@ -368,13 +365,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3B7CAE0924E7B13000EC3FAA /* iDKSafeDictionary */ = {
+		3BFB967324F116310095F44F /* DevelopKits */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = iDKSafeDictionary;
-		};
-		3B7CAE0B24E7B13000EC3FAA /* iDKUserDefault */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iDKUserDefault;
+			productName = DevelopKits;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

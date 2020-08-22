@@ -1,6 +1,6 @@
 //
 //  SafeDictionary.swift
-//  TEQNetwork
+//  DevelopKits
 //
 //  Created by Nghia Nguyen on 6/4/19.
 //
@@ -13,7 +13,7 @@ public final class SafeDictionary<Key: Hashable, Value> {
     var dictionary: [Key: Value] = [:]
     var concurrentQueue: DispatchQueue
 
-    public init(queueLabel: String = "com.quangnghiadev.idevkits.safedictionary") {
+    public init(queueLabel: String = "com.quangnghiadev.DevelopKits.safedictionary") {
         self.concurrentQueue = DispatchQueue(label: queueLabel, attributes: .concurrent)
     }
 

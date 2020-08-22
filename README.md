@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nghiadev95/iDevKits/master/Assets/logo.png" title="iDevKits">
+  <img src="https://raw.githubusercontent.com/nghiadev95/DevelopKits/master/Assets/logo.png" title="DevelopKits">
 </p>
 
-[![Build Status](https://github.com/nghiadev95/iDevKits/workflows/Swift/badge.svg?branch=master)](https://github.com/nghiadev95/iDevKits/actions)
-[![Cocoapods platforms](https://img.shields.io/cocoapods/p/iDevKits)](https://github.com/nghiadev95/iDevKits)
-[![Cocoapods](https://img.shields.io/cocoapods/v/iDevKits.svg)](https://cocoapods.org/pods/iDevKits)
+[![Build Status](https://github.com/nghiadev95/DevelopKits/workflows/Swift/badge.svg?branch=master)](https://github.com/nghiadev95/DevelopKits/actions)
+[![Cocoapods platforms](https://img.shields.io/cocoapods/p/DevelopKits)](https://github.com/nghiadev95/DevelopKits)
+[![Cocoapods](https://img.shields.io/cocoapods/v/DevelopKits.svg)](https://cocoapods.org/pods/DevelopKits)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 [![Swift](https://img.shields.io/badge/Swift-5.3-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-11.6-blue.svg)](https://developer.apple.com/xcode)
 [![MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
-**iDevKits** is a composited library of useful classes, extensions for helping development more fastly
+**DevelopKits** is a composited library of useful classes, extensions for helping development more fastly
 
 ## Requirements
 
@@ -21,14 +21,14 @@
 
 ### CocoaPods
 
-To integrate iDevKits into your Xcode project using CocoaPods, specify it in your `Podfile`
+To integrate DevelopKits into your Xcode project using CocoaPods, specify it in your `Podfile`
 
 ```ruby
-pod 'iDevKits'
+pod 'DevelopKits'
 ```
 
 ### Swift Package Manager
-You can use The Swift Package Manager to install iDevKits by adding the proper description to your `Package.swift` 
+You can use The Swift Package Manager to install DevelopKits by adding the proper description to your `Package.swift` 
 
 ```swift
 import PackageDescription
@@ -37,7 +37,7 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .package(url: "https://github.com/nghiadev95/iDevKits.git", from: "1.0.0")
+        .package(url: "https://github.com/nghiadev95/DevelopKits.git", from: "1.0.0")
     ]
 )
 ```
@@ -95,13 +95,13 @@ var user: UserProfile?
 
 ### Extension
 
-- [Foundation](https://github.com/nghiadev95/iDevKits/tree/master/Sources/Foundation)
-- [UIKit](https://github.com/nghiadev95/iDevKits/tree/master/Sources/UIKit)
+- [Foundation](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/Foundation)
+- [UIKit](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/UIKit)
 
 
 ## License
 
-- iDevKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift). See  [LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
-- iDevKits is using [Then](https://github.com/devxoul/Then). See  [LICENSE](https://github.com/devxoul/Then/blob/master/LICENSE) for more information.
-- iDevKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/iDevKits/blob/master/LICENSE) for more information.
+- DevelopKits is using [SwifterSwift](https://github.com/SwifterSwift/SwifterSwift). See  [LICENSE](https://github.com/SwifterSwift/SwifterSwift/blob/master/LICENSE) for more information.
+- DevelopKits is using [Then](https://github.com/devxoul/Then). See  [LICENSE](https://github.com/devxoul/Then/blob/master/LICENSE) for more information.
+- DevelopKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/DevelopKits/blob/master/LICENSE) for more information.
 
