@@ -95,8 +95,8 @@ var user: UserProfile?
 
 ### Extension
 
-- [Foundation](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/Foundation)
-- [UIKit](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/UIKit)
+- [Foundation](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/DevelopKits/Foundation)
+- [UIKit](https://github.com/nghiadev95/DevelopKits/tree/master/Sources/DevelopKits/UIKit)
 
 
 ## License
