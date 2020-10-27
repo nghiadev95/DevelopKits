@@ -17,14 +17,6 @@
 
 ## Installation
 
-### CocoaPods
-
-To integrate DevelopKits into your Xcode project using CocoaPods, specify it in your `Podfile`
-
-```ruby
-pod 'DevelopKits'
-```
-
 ### Swift Package Manager
 You can use The Swift Package Manager to install DevelopKits by adding the proper description to your `Package.swift` 
 
