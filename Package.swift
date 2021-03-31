@@ -14,14 +14,10 @@ let package = Package(
             name: "DevelopKits",
             targets: ["DevelopKits"])
     ],
-    dependencies: [
-        .package(url: "https://github.com/devxoul/Then.git", from: "2.7.0"),
-        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.2.0")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "DevelopKits",
-            dependencies: ["Then", "SwifterSwift"],
             path: "Sources/DevelopKits")
     ],
     swiftLanguageVersions: [.v5])
