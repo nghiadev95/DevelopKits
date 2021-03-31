@@ -20,7 +20,7 @@
 ## Installation
 
 ### Swift Package Manager
-You can use The Swift Package Manager to install RequestKits by adding https://github.com/quangnghiadev/DevelopKits.git to Swift Package of your XCode project
+You can use The Swift Package Manager to install DevelopKits by adding https://github.com/quangnghiadev/DevelopKits.git to Swift Package of your XCode project
 
 
 ## Usage
